@@ -28,7 +28,11 @@
 
 ### :orange_circle: Features
 - Admin can login to their account with ID and Password.
-- Homepage contains a dashboard with aesthetic UI with easy navigation between different sections.
+- Homepage:
+  - Quick navigation between sections.
+  - Overview of the restaurant using Google Charts.
+  - Order notification.
+  - Inventory notification. 
 - The Admin Panel section:
   - List of all admins.
   - Adding admin functionality.
