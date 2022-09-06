@@ -29,15 +29,19 @@
 ### :orange_circle: Features
 - Admin can login to their account with ID and Password.
 - Homepage contains a dashboard with aesthetic UI with easy navigation between different sections.
-- The Admin Panel section consists of the following things:
+- The Admin Panel section:
   - List of all admins.
   - Adding admin functionality.
   - Change password of admins.
   - Update Information of admins.
   - Deleting admins.
-- The Online Orders page fetches the orders recieved from the website and displays them. This section has the following functionalities:
+- The Online Orders page:
   - Display order ID and information of the user.
   - Display the status of the payment.
   - Button to update the order status.
   - A table containing the list of items ordered.
- The Eat In Orders is received from the restaurant hardware device. <a href="https://github.com/mwasikz/food-ordering-device">Documentation for the Hardware Device</a>
+-The Eat In Orders is received from the restaurant hardware device: <a href="https://github.com/mwasikz/food-ordering-device">Documentation for the Hardware Device</a>
+  - Display order information and Table ID.
+  - Status of payment.
+  - Status of order.
+  - Admin can update and delete order information.
