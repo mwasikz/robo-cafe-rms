@@ -38,3 +38,6 @@
 - The Online Orders page fetches the orders recieved from the website and displays them. This section has the following functionalities:
   - Display order ID and information of the user.
   - Display the status of the payment.
+  - Button to update the order status.
+  - A table containing the list of items ordered.
+ The Eat In Orders is received from the restaurant hardware device. <a href="https://github.com/mwasikz/food-ordering-device">Documentation for the Hardware Device</a>
