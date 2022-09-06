@@ -58,3 +58,11 @@
   - Notification for items running low on stocks.
   - Different status system for quota of stocks.
   - Admin can update stock information. 
+### :orange_circle: Languages and Technologies Used
+- HTML5/CSS3
+- JavaScript (to create dynamically updating content)
+- Bootstrap (An HTML, CSS, and JS library)
+- XAMPP (A web server by Apache Friends)
+- PHP
+- MySQL (An RDBMS that uses SQL)
+
