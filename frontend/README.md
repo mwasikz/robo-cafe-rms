@@ -24,3 +24,12 @@
 
 #### View Orders
 <img src="https://github.com/mwasikz/robo-cafe-rms/blob/main/admin/img/readme_assets/frontend/view_orders.png" width="1000" >
+
+### :orange_circle: Languages and Technologies Used
+- HTML5/CSS3
+- JavaScript (to create dynamically updating content)
+- Bootstrap (An HTML, CSS, and JS library)
+- XAMPP (A web server by Apache Friends)
+- PHP
+- MySQL (An RDBMS that uses SQL)
+
