@@ -49,3 +49,12 @@
   - Status of payment.
   - Status of order.
   - Admin can update and delete order information.
+- Category Management:
+  - Admin can add a new category.
+  - Admin can update categories. 
+  - Admin can delete categories. 
+- Inventory Management:
+  - Inventory page fetches real time inventory information from the database each time an order is placed.
+  - Notification for items running low on stocks.
+  - Different status system for quota of stocks.
+  - Admin can update stock information. 
