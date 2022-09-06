@@ -40,7 +40,7 @@
   - Display the status of the payment.
   - Button to update the order status.
   - A table containing the list of items ordered.
--The Eat In Orders is received from the restaurant hardware device: <a href="https://github.com/mwasikz/food-ordering-device">Documentation for the Hardware Device</a>
+- The Eat In Orders is received from the restaurant hardware device: <a href="https://github.com/mwasikz/food-ordering-device">Documentation for the Hardware     Device</a>
   - Display order information and Table ID.
   - Status of payment.
   - Status of order.
