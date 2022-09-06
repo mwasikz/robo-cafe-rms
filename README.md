@@ -22,3 +22,6 @@
 #### Category Management
 
 <img src="https://github.com/mwasikz/robo-cafe-rms/blob/main/admin/img/readme_assets/admin/category_management.png" width="1000" >
+
+#### Inventory 
+<img src="https://github.com/mwasikz/robo-cafe-rms/blob/main/admin/img/readme_assets/admin/inventory_management_page.png" width="1000" >
