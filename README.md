@@ -35,7 +35,7 @@
   - Inventory notification. 
 - The Admin Panel section:
   - List of all admins.
-  - Adding admin functionality.
+  - Adding new admin.
   - Change password of admins.
   - Update Information of admins.
   - Deleting admins.
