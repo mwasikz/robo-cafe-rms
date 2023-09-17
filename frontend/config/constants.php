@@ -6,7 +6,7 @@ ob_start();
 session_start();
 
 //Creating constant to store non repeating values
-define('SITEURL', 'http://192.168.0.103/projects/Robo_Cafe_RMS/');
+define('SITEURL', '');
 
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
