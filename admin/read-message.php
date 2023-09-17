@@ -2,8 +2,8 @@
 
 //Including the constant file
 
-include('../config/constants.php');
-include('login-check.php');
+include('../frontend/config/constants.php');
+//include('login-check.php');
 
 $id = $_GET['id'];
 $sql = "UPDATE message SET
