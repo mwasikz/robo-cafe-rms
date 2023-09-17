@@ -1,5 +1,5 @@
-<?php include('../config/constants.php'); ?>
-<?php include('login-check.php'); ?>
+<?php include('../frontend/config/constants.php'); ?>
+<?php //include('login-check.php'); ?>
 <?php
            $payment_status_query = "UPDATE order_manager
                    SET payment_status = 'successful'
