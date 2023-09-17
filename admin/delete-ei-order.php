@@ -1,5 +1,5 @@
-<?php include('../config/constants.php');
-	  include('login-check.php');
+<?php include('../frontend/config/constants.php');
+	  //include('login-check.php');
 ?>
 
 <?php
