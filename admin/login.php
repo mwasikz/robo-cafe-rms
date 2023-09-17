@@ -1,6 +1,6 @@
 <!-- Including the constant file -->
 <?php 
-include('../config/constants.php');
+include('../frontend/config/constants.php');
 
 ?>
 
