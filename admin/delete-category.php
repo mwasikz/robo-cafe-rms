@@ -1,6 +1,6 @@
 <?php 
-    include('../config/constants.php');
-    include('login-check.php');
+    include('../frontend/config/constants.php');
+    //include('login-check.php');
 
     if(isset($_GET['id']) AND isset($_GET['image_name']))
     {
