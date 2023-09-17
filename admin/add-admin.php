@@ -1,5 +1,5 @@
-<?php include('../config/constants.php');
-	  include('login-check.php');
+<?php include('../frontend/config/constants.php');
+	  //include('login-check.php');
 
 $ei_order_notif = "SELECT order_status from tbl_eipay
 				   WHERE order_status='Pending' OR order_status='Processing'";
