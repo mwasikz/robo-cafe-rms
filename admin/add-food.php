@@ -479,7 +479,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 
                     //Destination path for the image to be uploaded
 
-                    $dst = "../images/food/".$image_name;
+                    $dst = "../frontend/images/food/".$image_name;
 
                     //Finally upload food image
                     $upload = move_uploaded_file($src, $dst);
