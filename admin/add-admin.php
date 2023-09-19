@@ -328,13 +328,13 @@ if(isset($_POST['submit']))
 	{
 
         $_SESSION['add'] = "<div class='success'>Admin Added Successfully</div>";
-        header("location:".SITEURL.'admin/manage-admin.php');
+        header("location:".SITEURL.'manage-admin.php');
 
     }
     else
 	{
         $_SESSION['add'] = "<div class='error'>Failed to Add Admin</div>";
-        header("location:".SITEURL.'admin/add-admin.php');
+        header("location:".SITEURL.'add-admin.php');
     }
 
 }
