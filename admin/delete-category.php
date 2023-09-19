@@ -9,7 +9,7 @@
 
         if($image_name != "")
         {
-            $path = "../images/category/".$image_name;
+            $path = "img/category/".$image_name;
             $remove = unlink($path);
 
             if($remove==false)
