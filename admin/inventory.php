@@ -328,7 +328,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                                 //Image available. Displaying image
                                 ?>  <!-- Breaking PHP to write HTML -->
 
-                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" width="100px">
+                            <img src="<?php echo SITEURL; ?>img/food/<?php echo $image_name; ?>" width="100px">
 
                             <?php
                             }
