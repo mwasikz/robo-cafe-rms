@@ -385,7 +385,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                     $image_name = "Food_Category_".rand(000, 99999).'.'.$ext;
 
                     $source_path = $_FILES['image']['tmp_name'];
-                    $destination_path = "../frontend/images/category/".$image_name;
+                    $destination_path = "img/category/".$image_name;
 
                     //Uploading the image
                     $upload = move_uploaded_file($source_path, $destination_path);
