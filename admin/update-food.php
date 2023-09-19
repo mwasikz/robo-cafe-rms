@@ -63,7 +63,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
     else
     {
         //Redirect to Manage Food
-        header('location:'.SITEURL.'admin/manage-food.php');
+        header('location:'.SITEURL.'manage-food.php');
     }
 ?>
 
@@ -486,7 +486,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             //FAiled to Upload
                             $_SESSION['upload'] = "<div class='error text-center'>Failed to Upload New Image.</div>";
                             //REdirect to Manage Food 
-                            header('location:'.SITEURL.'admin/manage-food.php');
+                            header('location:'.SITEURL.'manage-food.php');
                             //Stop the Process
                             die();
                         }
@@ -506,7 +506,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                                 //failed to remove current image
                                 $_SESSION['remove-failed'] = "<div class='error text-center'>Failed to remove current image.</div>";
                                 //redirect to manage food
-                                header('location:'.SITEURL.'admin/manage-food.php');
+                                header('location:'.SITEURL.'manage-food.php');
                                 //stop the process
                                 die();
                             }
@@ -545,13 +545,13 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                 {
                     //Query Exectued and Food Updated
                     $_SESSION['update'] = "<div class='success text-center'>Food Updated Successfully.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php');
+                    header('location:'.SITEURL.'manage-food.php');
                 }
                 else
                 {
                     //Failed to Update Food
                     $_SESSION['update'] = "<div class='error text-center'>Failed to Update Food.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php');
+                    header('location:'.SITEURL.'manage-food.php');
                 }
 
                 

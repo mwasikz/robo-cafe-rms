@@ -315,7 +315,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 		<br/>
 
             <!-- Button Add Admin-->
-            <a href="<?php echo SITEURL; ?>admin/add-category.php" class="button-8" role="button">Add Category</a>
+            <a href="<?php echo SITEURL; ?>add-category.php" class="button-8" role="button">Add Category</a>
 
             <br /> <br/>
 				<div class="table-data">
@@ -389,8 +389,8 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                     <td><?php echo $featured; ?></td>
                     <td><?php echo $active; ?></td>
                     <td>
-                        <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
-                        <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="button-7" role="button">Delete</a>
+                        <a href="<?php echo SITEURL; ?>update-category.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
+                        <a href="<?php echo SITEURL; ?>delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="button-7" role="button">Delete</a>
                     </td>
                 </tr>
 

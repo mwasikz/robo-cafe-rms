@@ -287,7 +287,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
             }
             else{
                 //Redirect to manage admin page
-                header('location:'.SITEURL.'admin/manage-ei-order.php');
+                header('location:'.SITEURL.'manage-ei-order.php');
             }
         }
 
@@ -392,12 +392,12 @@ if(isset($_POST['submit'])){
      if($res == true){
 
          $_SESSION['update'] = "<div class='success'>Order Updated Successfully</div>";
-         header('location:'.SITEURL.'admin/manage-ei-order.php');
+         header('location:'.SITEURL.'manage-ei-order.php');
      }
 
      else{
         $_SESSION['update'] = "<div class='error'>Failed to Update Order</div>";
-         header('location:'.SITEURL.'admin/manage-ei-order.php');
+         header('location:'.SITEURL.'manage-ei-order.php');
          
      }
 

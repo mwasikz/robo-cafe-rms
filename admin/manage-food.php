@@ -282,7 +282,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
     
 ?>
 <br/>
-<a href="<?php echo SITEURL; ?>admin/add-food.php" class="button-8" role="button">Add Food</a>
+<a href="<?php echo SITEURL; ?>add-food.php" class="button-8" role="button">Add Food</a>
 <br/><br/>
 <div class="table-data">
 	<div class="order">
@@ -342,8 +342,8 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             <td><?php echo $featured; ?></td>
                             <td><?php echo $active; ?></td>
                                 <td>
-                                <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
-                                <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="button-7" role="button">Delete</a>
+                                <a href="<?php echo SITEURL; ?>update-food.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
+                                <a href="<?php echo SITEURL; ?>delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="button-7" role="button">Delete</a>
                                 </td>
                         </tr>
 

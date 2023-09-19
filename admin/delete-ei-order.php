@@ -25,14 +25,14 @@ if($res == true){
 
     //Redirecting to Admin Panel Page
 
-    header('location:'.SITEURL.'admin/manage-ei-order.php');
+    header('location:'.SITEURL.'manage-ei-order.php');
 }
 else{
     //Failed to delete admin
     //echo "Failed to Delete Admin";
 
     $_SESSION['delete'] = "<div class='error'>Failed to Delete Order</div>";
-    header('location:'.SITEURL.'admin/manage-ei-order.php');
+    header('location:'.SITEURL.'manage-ei-order.php');
 }
 
 //3. Redirect to manage admin page with message(Succuess/error)

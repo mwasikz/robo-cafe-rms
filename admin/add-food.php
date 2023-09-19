@@ -491,7 +491,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                         //Failed to upload the image
                         //Redirect to add food page with error message
                         $_SESSION['upload'] = "<div class='error text-center'>Failed to Upload Image</div>";
-                        header('location:'.SITEURL.'admin/add-food.php');
+                        header('location:'.SITEURL.'add-food.php');
                         //Stop the process
                         die();
                     }
@@ -529,13 +529,13 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
             {
                 //Data inserted successfully
                 $_SESSION['add'] = "<div class='success text-center'>Food Added Successfully</div>";
-                header('location:'.SITEURL.'admin/manage-food.php');
+                header('location:'.SITEURL.'manage-food.php');
             }
             else
             {
                 //Failed to Insert Data
                 $_SESSION['add'] = "<div class='error text-center'>Failed to Add Food</div>";
-                header('location:'.SITEURL.'admin/manage-food.php');
+                header('location:'.SITEURL.'manage-food.php');
             }
 
             

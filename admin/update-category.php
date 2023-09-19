@@ -304,14 +304,14 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                 {
                     //redirect to manage category with session message
                     $_SESSION['no-category-found'] = "<div class='error'>Category not Found.</div>";
-                    header('location:'.SITEURL.'admin/manage-category.php');
+                    header('location:'.SITEURL.'manage-category.php');
                 }
 
             }
             else
             {
                 //redirect to Manage CAtegory
-                header('location:'.SITEURL.'admin/manage-category.php');
+                header('location:'.SITEURL.'manage-category.php');
             }
         
         ?>
@@ -434,7 +434,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             //SEt message
                             $_SESSION['upload'] = "<div class='error'>Failed to Upload Image. </div>";
                             //Redirect to Add CAtegory Page
-                            header('location:'.SITEURL.'admin/manage-category.php');
+                            header('location:'.SITEURL.'manage-category.php');
                             //STop the Process
                             die();
                         }
@@ -452,7 +452,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             {
                                 //Failed to remove image
                                 $_SESSION['failed-remove'] = "<div class='error'>Failed to remove current Image.</div>";
-                                header('location:'.SITEURL.'admin/manage-category.php');
+                                header('location:'.SITEURL.'manage-category.php');
                                 die();//Stop the Process
                             }
                         }
@@ -487,13 +487,13 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                 {
                     //Category Updated
                     $_SESSION['update'] = "<div class='success'>Category Updated Successfully.</div>";
-                    header('location:'.SITEURL.'admin/manage-category.php');
+                    header('location:'.SITEURL.'manage-category.php');
                 }
                 else
                 {
                     //failed to update category
                     $_SESSION['update'] = "<div class='error'>Failed to Update Category.</div>";
-                    header('location:'.SITEURL.'admin/manage-category.php');
+                    header('location:'.SITEURL.'manage-category.php');
                 }
 
             }

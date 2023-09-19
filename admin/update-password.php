@@ -360,7 +360,7 @@ if(isset($_POST['submit'])){
 
                 //Redirecting the user
 
-                header('location:'.SITEURL.'admin/manage-admin.php');
+                header('location:'.SITEURL.'manage-admin.php');
                     }
                     else{
                         //Display error message
@@ -368,7 +368,7 @@ if(isset($_POST['submit'])){
 
                 //Redirecting the user
 
-                header('location:'.SITEURL.'admin/manage-admin.php');
+                header('location:'.SITEURL.'manage-admin.php');
                     }
                 }
                 else{
@@ -376,7 +376,7 @@ if(isset($_POST['submit'])){
 
                 //Redirecting the user
 
-                header('location:'.SITEURL.'admin/manage-admin.php');
+                header('location:'.SITEURL.'manage-admin.php');
 
                 }
             }
@@ -386,7 +386,7 @@ if(isset($_POST['submit'])){
 
                 //Redirecting the user
 
-                header('location:'.SITEURL.'admin/manage-admin.php');
+                header('location:'.SITEURL.'manage-admin.php');
             }
         }
 

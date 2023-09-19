@@ -283,7 +283,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
             }
             else
             {
-                header('location:'.SITEURL.'admin/inventory.php');
+                header('location:'.SITEURL.'inventory.php');
             }
         }
 
@@ -349,7 +349,7 @@ if(isset($_POST['submit'])){
 
          $_SESSION['update'] = "<div class='success'>Stock Updated Successfully</div>";
 
-         header('location:'.SITEURL.'admin/inventory.php');
+         header('location:'.SITEURL.'inventory.php');
      }
 
      else
@@ -357,7 +357,7 @@ if(isset($_POST['submit'])){
         
         $_SESSION['update'] = "<div class='error'>Failed to Update Stock</div>";
 
-         header('location:'.SITEURL.'admin/inventory.php');
+         header('location:'.SITEURL.'inventory.php');
          
      }
 

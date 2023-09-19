@@ -294,7 +294,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
             }
             else{
                 //Redirect to manage admin page
-                header('location:'.SITEURL.'admin/manage-admin.php');
+                header('location:'.SITEURL.'manage-admin.php');
             }
         }
 
@@ -370,7 +370,7 @@ if(isset($_POST['submit'])){
 
          //Redirecting to Admin Panel
 
-         header('location:'.SITEURL.'admin/manage-admin.php');
+         header('location:'.SITEURL.'manage-admin.php');
      }
 
      else{
@@ -379,7 +379,7 @@ if(isset($_POST['submit'])){
 
          //Redirecting to Admin Panel
 
-         header('location:'.SITEURL.'admin/manage-admin.php');
+         header('location:'.SITEURL.'manage-admin.php');
          
      }
 

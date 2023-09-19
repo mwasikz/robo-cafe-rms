@@ -397,7 +397,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                     //Set message
                     $_SESSION['upload'] = "<div class='error text-center'>Failed to Upload Image</div>";
                     //Redirecting to add category page
-                    header('location:'.SITEURL.'admin/add-category.php');
+                    header('location:'.SITEURL.'add-category.php');
                     //Stop the process
                     die();
                     }
@@ -427,14 +427,14 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                 //Query Executed and category added
                 $_SESSION['add'] = "<div class='success text-center'>Category Added Successfully</div>";
                 //Redirect to manage category Page
-                header('location:'.SITEURL.'admin/manage-category.php');
+                header('location:'.SITEURL.'manage-category.php');
             }
             else
             {
                 //Failed to add category
                 $_SESSION['add'] = "<div class='error text-center'>Failed to Add Category</div>";
                 //Redirect to manage category Page
-                header('location:'.SITEURL.'admin/add-category.php');
+                header('location:'.SITEURL.'add-category.php');
             }
 
         }

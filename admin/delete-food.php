@@ -39,7 +39,7 @@ if(isset($_GET['id']) && isset($_GET['image_name']))
             //Failed to remove image
             $_SESSION['upload'] = "<div class='error text-center'>Failed to Remove Image</div>";
             //Redirect to Manage Food page
-            header('location:'.SITEURL.'admin/manage-food.php');
+            header('location:'.SITEURL.'manage-food.php');
 
             //Stop the process
 
@@ -63,14 +63,14 @@ if(isset($_GET['id']) && isset($_GET['image_name']))
         //Food Deleted
         $_SESSION['delete'] = "<div class='success text-center'>Food Deleted Successfully</div>";
             //Redirect to Manage Food page
-            header('location:'.SITEURL.'admin/manage-food.php');
+            header('location:'.SITEURL.'manage-food.php');
     }
     else
     {
         //Failed to delete food
         $_SESSION['delete'] = "<div class='error text-center'>Failed to Delete Food</div>";
             //Redirect to Manage Food page
-            header('location:'.SITEURL.'admin/manage-food.php');
+            header('location:'.SITEURL.'manage-food.php');
     }
 
 
@@ -85,7 +85,7 @@ else
     //Redirect to Manage Food Page
     //echo "Redirect";
     $_SESSION['unauthorized'] = "<div class='error text-center'>Unauthorized Access</div>";
-    header('location:'.SITEURL.'admin/manage-food.php');
+    header('location:'.SITEURL.'manage-food.php');
 
 }
 

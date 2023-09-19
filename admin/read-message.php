@@ -486,7 +486,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 						   </tr>
 						   <tr>
 							   <td><?php echo $message; ?></td>
-							   <td><a href="<?php echo SITEURL; ?>admin/delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a></td>
+							   <td><a href="<?php echo SITEURL; ?>delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a></td>
 						   </tr>
 
 							

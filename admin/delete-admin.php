@@ -21,12 +21,12 @@ if($res == true){
     
    $_SESSION['delete'] = "<div class='success'>Admin Deleted Successfully</div>";
 
-    header('location:'.SITEURL.'admin/manage-admin.php');
+    header('location:'.SITEURL.'manage-admin.php');
 }
 else{
 
     $_SESSION['delete'] = "<div class='error'>Failed to Delete Admin</div>";
-    header('location:'.SITEURL.'admin/manage-admin.php');
+    header('location:'.SITEURL.'manage-admin.php');
 }
 
 //3. Redirect to manage admin page with message(Succuess/error)

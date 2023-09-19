@@ -339,9 +339,9 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 								<td><?php echo $full_name; ?></td>
 								<td><?php echo $username; ?></td>
 								<td>
-                        			<a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="button-5" role="button">Change Password</a>
-                        			<a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="button-6" role="button">Update</a>
-                        			<a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
+                        			<a href="<?php echo SITEURL; ?>update-password.php?id=<?php echo $id; ?>" class="button-5" role="button">Change Password</a>
+                        			<a href="<?php echo SITEURL; ?>update-admin.php?id=<?php echo $id; ?>" class="button-6" role="button">Update</a>
+                        			<a href="<?php echo SITEURL; ?>delete-admin.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
 									
                     			</td>
 							</tr>

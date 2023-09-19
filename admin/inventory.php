@@ -358,7 +358,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 							</td>
 
 							<td>
-								<a href="<?php echo SITEURL; ?>admin/update-inventory.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
+								<a href="<?php echo SITEURL; ?>update-inventory.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
 							</td>
                               
                         </tr>

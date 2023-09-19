@@ -81,7 +81,7 @@ include('../frontend/config/constants.php');
             $_SESSION['login']  = "<div class='success'>Login Successful</div>";
             $_SESSION['user-admin'] = $username; //to check whether the user is logged in or not and logout will unset it
             //Redirecting to dashboard
-            header('location:'.SITEURL.'admin/');
+            header('location:'.SITEURL.'');
         }
         else
         {

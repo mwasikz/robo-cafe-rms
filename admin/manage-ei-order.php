@@ -340,8 +340,8 @@ $sn = 1; //Create a Serial Number and set its initail value as 1
 									
 										</td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-ei-order.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-ei-order.php?id=<?php echo $id; ?>" class="button-7" role="button">Delete</a>
+                                            <a href="<?php echo SITEURL; ?>update-ei-order.php?id=<?php echo $id; ?>" class="button-5" role="button">Update</a>
+                                            <a href="<?php echo SITEURL; ?>delete-ei-order.php?id=<?php echo $id; ?>" class="button-7" role="button">Delete</a>
 											
                                         </td>
                                     </tr>

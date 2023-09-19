@@ -418,11 +418,11 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             if($message_status == 'read')
                             { ?>
                                 <tr>
-								<td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "$name"; ?></a></td>
-								<td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "$subject"; ?></a></td>
-                                <td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "$date"; ?></a></td>
+								<td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "$name"; ?></a></td>
+								<td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "$subject"; ?></a></td>
+                                <td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "$date"; ?></a></td>
 								<td>
-                        			<a href="<?php echo SITEURL; ?>admin/delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
+                        			<a href="<?php echo SITEURL; ?>delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
 									
                     			</td>
 							</tr>
@@ -433,11 +433,11 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                                  ?>
                                <tr>
                                    <div class="unread_message">
-								<td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$name</span>"; ?></a></td>
-								<td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$subject</span>"; ?></a></td>
-                                <td><a href="<?php echo SITEURL; ?>admin/read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$date</span>"; ?></a></td>
+								<td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$name</span>"; ?></a></td>
+								<td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$subject</span>"; ?></a></td>
+                                <td><a href="<?php echo SITEURL; ?>read-message.php?id=<?php echo $id; ?>" > <?php echo "<span class='unread'>$date</span>"; ?></a></td>
 								<td>
-                        			<a href="<?php echo SITEURL; ?>admin/delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
+                        			<a href="<?php echo SITEURL; ?>delete-message.php?id=<?php echo $id; ?>" class="button-7" role="button" >Delete</a>
                             </div>
                     			</td>
 							</tr>
