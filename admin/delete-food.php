@@ -26,7 +26,7 @@ if(isset($_GET['id']) && isset($_GET['image_name']))
         //Image name not empty so image is available
         //Getting the Image path
 
-        $path = "../images/food/".$image_name;
+        $path = "img/food/".$image_name;
 
         //Remove image file from folder
 
