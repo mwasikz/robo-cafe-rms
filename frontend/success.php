@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=="POST")
     <link rel="stylesheet" href="css/eipay.css">
     <link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo_ntx.png">
     
 </head>
 <body>

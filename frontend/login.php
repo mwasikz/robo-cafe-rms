@@ -16,7 +16,7 @@ include('config/constants.php');
     <link rel="stylesheet" href="css/login-front.css">
     <link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo.png">
 
     <title>Login</title>
 </head>

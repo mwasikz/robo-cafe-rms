@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="<?php echo SITEURL; ?>" class="navbar-brand p-0">
                     
-                   <img src="images/logo.png" alt="Logo">
+                   <img src="../images/logo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -137,7 +137,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>First of all, I love their interior design.Their services was so nice & amazing .And also i like their food so much</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/about1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Rasel Hossain</h5>
                                 <small>Student</small>
@@ -148,7 +148,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>I was quite amazed by their unique concept. Hats off to Robo cafe and their whole team.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/about1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Ashraf Alam</h5>
                                 <small>Businessman</small>
@@ -159,7 +159,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>Nice environment also provide healthy and tasty food.Like it very much</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/about1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Sumon Mollah</h5>
                                 <small>Teacher</small>
@@ -170,9 +170,9 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>WOW!! Exceptional concept of Robo Cafe.Food quality is good, keep it up.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/about1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Otoshy Haque</h5>
+                                <h5 class="mb-1">Labony Haque</h5>
                                 <small>Student</small>
                             </div>
                         </div>

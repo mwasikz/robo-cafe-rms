@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" 
       type="image/png" 
-      href="images/logo_ntx.png">
+      href="../images/logo.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="<?php echo SITEURL; ?>" class="navbar-brand p-0">
                    
-                   <img src="images/logo.png" alt="Logo"> 
+                   <img src="../images/logo.png" alt="Logo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>

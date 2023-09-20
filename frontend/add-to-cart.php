@@ -26,7 +26,7 @@ array_push($_SESSION['cart'], $_GET['food_id']);
     <!-- Favicon -->
     <link rel="icon" 
       type="image/png" 
-      href="images/logo_ntx.png">
+      href="../images/logo.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +65,7 @@ array_push($_SESSION['cart'], $_GET['food_id']);
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="<?php echo SITEURL; ?>" class="navbar-brand p-0">
                    
-                   <img src="images/logo.png" alt="Logo">
+                   <img src="../images/logo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -109,7 +109,7 @@ array_push($_SESSION['cart'], $_GET['food_id']);
  <div class="card" style="max-width: 500px;">
   <div class="row no-gutters justify-content-center">
     <div class="col-md-4">
-      <img src="img/Cart-add-icon.png" class="card-img" alt="...">
+      <img src="../images/Cart-add-icon.png" class="card-img" alt="...">
     </div>
     <div class="col-md-12">
       <div class="card-body">

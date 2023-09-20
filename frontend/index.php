@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" 
       type="image/png" 
-      href="images/logo_ntx.png">
+      href="../images/logo.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="<?php echo SITEURL; ?>" class="navbar-brand p-0">
                     
-                    <img src="images/logo.png" alt="Logo"> 
+                    <img src="../images/logo.png" alt="Logo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -118,7 +118,7 @@
                             <a href="<?php echo SITEURL; ?>categories.php" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Explore Categories</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="images/hero.png" alt="">
+                            <img class="img-fluid" src="../images/hero.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -180,16 +180,16 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="images/about-1.jpg">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="../images/about-1.jpg">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="images/about-2.jpg" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="../images/about-2.jpg" style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="images/about-3.jpg">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="../images/about-3.jpg">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="images/about-4.jpg">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="../images/about-4.jpg">
                             </div>
                         </div>
                     </div>
@@ -251,7 +251,7 @@
                                 ?>
                          <div class="col-lg-3">
                             <div class="card">
-                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" class="card-img-top" alt="...">
+                                <img src="<?php echo SITEURL; ?>../images/food/<?php echo $image_name; ?>" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <form action="manage-cart.php" method="POST">
                                     <h5 class="card-title"><?php echo $title; ?></h5>
@@ -321,7 +321,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>First of all, I love their interior design.Their services was so nice & amazing .And also i like their food so much</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/avatar1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Rasel Hossain</h5>
                                 <small>Student</small>
@@ -332,7 +332,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>I was quite amazed by their unique concept. Hats off to Robo cafe and their whole team.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/avatar1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Ashraf Alam</h5>
                                 <small>Businessman</small>
@@ -343,7 +343,7 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>Nice environment also provide healthy and tasty food.Like it very much</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/avatar1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Sumon Mollah</h5>
                                 <small>Teacher</small>
@@ -354,9 +354,9 @@
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>WOW!! Exceptional concept of Robo Cafe.Food quality is good, keep it up.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/avatar1.jpeg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="../images/avatar1.jpeg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Otoshy Haque</h5>
+                                <h5 class="mb-1">Labony Haque</h5>
                                 <small>Student</small>
                             </div>
                         </div>
