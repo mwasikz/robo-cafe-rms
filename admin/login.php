@@ -19,7 +19,7 @@ include('../frontend/config/constants.php');
     <link rel="stylesheet" href="login.css">
     <link rel="icon" 
     type="image/png" 
-    href="img/logo_ntx.png">
+    href="../images/logo.png">
 
     <title>Login</title>
 </head>

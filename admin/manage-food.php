@@ -40,7 +40,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 	<link rel="stylesheet" href="style-admin.css">
 	<link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo.png">
 
 	<title>Robo Cafe Admin</title>
 </head>
@@ -48,7 +48,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 
 	<section id="sidebar">
 		<a href="index.php" class="brand">
-			<img src="img/logo.png" width="190px" alt="">
+			<img src="../images/logo.png" width="80px" alt="">
 		</a>
 		<ul class="side-menu top">
 			<li >
@@ -332,7 +332,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
                             {
                                 ?> 
 
-                            <img src="<?php echo SITEURL; ?>img/food/<?php echo $image_name; ?>" width="100px">
+                            <img src="<?php echo SITEURL; ?>../images/food/<?php echo $image_name; ?>" width="100px">
 
                             <?php
                             }

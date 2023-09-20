@@ -46,7 +46,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 	<link rel="stylesheet" href="style-admin.css">
     <link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo.png">
 
 	<title>Robo Cafe Admin</title>
 </head>
@@ -56,7 +56,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="index.php" class="brand">
-			<img src="img/logo.png" width="190px" alt="">
+			<img src="../images/logo.png" width="80px" alt="">
 		</a>
 		<ul class="side-menu top">
 			<li >
@@ -479,7 +479,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 
                     //Destination path for the image to be uploaded
 
-                    $dst = "img/food/".$image_name;
+                    $dst = "../images/food/".$image_name;
 
                     //Finally upload food image
                     $upload = move_uploaded_file($src, $dst);

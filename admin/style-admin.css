@@ -1113,7 +1113,7 @@ table {
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  background-image: url(img/card-bg1.jpg);
+  background-image: url(../images/card-bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1173,7 +1173,7 @@ table {
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  background-image: url(img/card-bg4.jpg);
+  background-image: url(../images/card-bg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1235,7 +1235,7 @@ table {
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  background-image: url(img/card-bg3.jpg);
+  background-image: url(../images/card-bg3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1296,7 +1296,7 @@ table {
   width: 300px;
   height: 200px;
   border-radius: 20px;
-  background-image: url(img/card-bg-8.jpg);
+  background-image: url(../images/card-bg-8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

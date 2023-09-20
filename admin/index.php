@@ -80,7 +80,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 	<link rel="stylesheet" href="style-admin.css">
 	<link rel="icon" 
       type="image/png" 
-      href="img/logo_ntx.png">
+      href="../images/logo.png">
 
 	<!-- Chart ---> 
 		
@@ -174,7 +174,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<img src="img/logo.png" width="190px" alt="">
+			<img src="../images/logo.png" width="80px" alt="">
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -418,7 +418,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 <div class="cards-list">
   
 <div class="card-stock">
-  <a href="inventory.php"><div class="card_image"> <img src="img/inventory.png" /> </div></a>
+  <a href="inventory.php"><div class="card_image"> <img src="../images/inventory.png" /> </div></a>
   <div class="card_title title-white">
 	  <p></p>
     <p>Inventory</p>
@@ -427,7 +427,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 
   <div class="card-stock2">
   <div class="card_image">
-    <a href=""><img src="img/revenue.png" /></a>
+    <a href=""><img src="../images/revenue.png" /></a>
     </div>
   <div class="card_title title-white">
 	  <p>৳<?=$total_revenue['total_amount']?></p>
@@ -437,7 +437,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
 
 <div class="card-stock3">
   <div class="card_image">
-    <a href=""><img src="img/orders_completed.png" /></a>
+    <a href=""><img src="../images/orders_completed.png" /></a>
   </div>
   <div class="card_title title-white">
 	  <p><?php echo $total_orders_delivered; ?></p>
@@ -447,7 +447,7 @@ $row_message_notif = mysqli_num_rows($res_message_notif);
   
   <div class="card-stock4">
   <div class="card_image">
-    <a href=""><img src="img/folder2.png" /></a>
+    <a href=""><img src="../images/folder2.png" /></a>
     </div>
   <div class="card_title title-white">
 	  <p><?php echo $row_item; ?></p>
