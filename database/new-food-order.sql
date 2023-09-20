@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2022 at 01:31 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+-- Generation Time: Sep 20, 2023 at 07:39 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `food-order`
+-- Database: `new-food-order`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +35,7 @@ CREATE TABLE `aamarpay` (
   `pay_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `transaction_id` varchar(100) NOT NULL,
   `card_type` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `aamarpay`
@@ -114,7 +114,7 @@ CREATE TABLE `message` (
   `message` longtext NOT NULL,
   `message_status` varchar(100) NOT NULL,
   `date` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `message`
@@ -135,7 +135,7 @@ CREATE TABLE `online_orders_new` (
   `Item_Name` varchar(100) NOT NULL,
   `Price` int(100) NOT NULL,
   `Quantity` int(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `online_orders_new`
@@ -286,7 +286,9 @@ INSERT INTO `online_orders_new` (`order_id`, `Item_Name`, `Price`, `Quantity`) V
 (96, 'Chili Hot Dog', 80, 1),
 (97, 'Red Hot', 120, 1),
 (98, 'Vegetarian Pizza', 300, 1),
-(99, 'Supreme Pizza', 450, 1);
+(99, 'Supreme Pizza', 450, 1),
+(100, 'Cheese Burger', 100, 1),
+(100, 'Beef Burger', 150, 1);
 
 -- --------------------------------------------------------
 
@@ -307,7 +309,7 @@ CREATE TABLE `order_manager` (
   `total_amount` int(11) NOT NULL,
   `transaction_id` varchar(100) NOT NULL,
   `order_status` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `order_manager`
@@ -401,7 +403,8 @@ INSERT INTO `order_manager` (`order_id`, `username`, `cus_name`, `cus_email`, `c
 (96, 'wasik0003', 'Mohammad Wasikuzzaman', 'wasikz331@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'successful', '2022-02-14 03:41:19', 380, 'ONL-PAY-6NW73HW7WR', 'Pending'),
 (97, 'wasik0003', 'Mohammad Wasikuzzaman', 'wasikz331@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'successful', '2022-02-14 03:46:19', 120, 'ONL-PAY-SK7IM5U84G', 'Delivered'),
 (98, 'wasik0003', 'Wasikuzzaman', 'wasik0003@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'successful', '2022-02-14 06:16:15', 300, 'ONL-PAY-8E5L7NIWAE', 'Processing'),
-(99, 'wasik0003', 'Wasikuzzaman', 'wasik0003@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'successful', '2022-02-14 06:26:37', 450, 'ONL-PAY-VPE49B581W', 'Processing');
+(99, 'wasik0003', 'Wasikuzzaman', 'wasik0003@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'successful', '2022-02-14 06:26:37', 450, 'ONL-PAY-VPE49B581W', 'Processing'),
+(100, 'mofiz11', 'Mofiz Mia', 'mofiz@gmail.com', 'Dhaka', 'Dhaka', 1717122112, 'pending', '2023-09-19 08:18:49', 250, 'ONL-PAY-02H137JNWT', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -414,15 +417,14 @@ CREATE TABLE `tbl_admin` (
   `full_name` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_admin`
 --
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
-(20, 'Maheosy Haque', 'sristy', '827ccb0eea8a706c4c34a16891f84e7b'),
-(24, 'Mohammad Wasikuzzaman', 'wasikz', '2464b94ceb49c2115c4238f51be98d8b');
+(39, 'Doc', 'doc211', 'b59c67bf196a4758191e42f76670ceba');
 
 -- --------------------------------------------------------
 
@@ -436,7 +438,7 @@ CREATE TABLE `tbl_category` (
   `image_name` varchar(255) NOT NULL,
   `featured` varchar(10) NOT NULL,
   `active` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_category`
@@ -446,7 +448,8 @@ INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) V
 (41, 'Burger', 'Food_Category_81005.jpg', 'Yes', 'Yes'),
 (42, 'Pizza', 'Food_Category_13196.jpg', 'Yes', 'Yes'),
 (43, 'Hot Dogs', 'Food_Category_76472.jpg', 'Yes', 'Yes'),
-(44, 'Sides', 'Food_Category_39435.jpg', 'Yes', 'Yes');
+(44, 'Sides', 'Food_Category_39435.jpg', 'Yes', 'Yes'),
+(48, 'Bengali', 'Food_Category_94135.png', 'Yes', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -462,20 +465,17 @@ CREATE TABLE `tbl_eipay` (
   `order_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `payment_status` varchar(50) NOT NULL,
   `order_status` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_eipay`
 --
 
 INSERT INTO `tbl_eipay` (`id`, `table_id`, `amount`, `tran_id`, `order_date`, `payment_status`, `order_status`) VALUES
-(415, 'Table 3', '763.00', 'EI-PAY-GKKQXXZ42C', '2022-02-09 10:36:18', 'Successful', 'Delivered'),
-(416, 'Table 2', '460.00', 'EI-PAY-5SA6TNEO29', '2022-02-09 12:14:30', 'Successful', 'Delivered'),
-(417, 'Table 3', '340.00', 'EI-PAY-O3NDZVJGRT', '2022-02-09 13:59:36', 'Successful', 'Delivered'),
-(418, 'Table 4', '450.00', 'EI-PAY-65IYLWUW2S', '2022-02-09 14:11:26', 'Successful', 'Pending'),
-(419, 'Table 5', '240.00', 'EI-PAY-IF4I2V35GA', '2022-02-09 14:16:56', 'Successful', 'Delivered'),
-(420, 'Table 4', '678.00', 'EI-PAY-245XLV2144', '2022-02-09 16:41:41', 'Successful', 'Delivered'),
-(421, 'Table 3', '500.00', 'EI-PAY-VKUY1A7P40', '2022-02-10 15:25:03', 'Successful', 'Pending');
+(415, 'Table 3', 763.00, 'EI-PAY-GKKQXXZ42C', '2022-02-09 10:36:18', 'Successful', 'Delivered'),
+(416, 'Table 2', 460.00, 'EI-PAY-5SA6TNEO29', '2022-02-09 12:14:30', 'Successful', 'Delivered'),
+(418, 'Table 4', 450.00, 'EI-PAY-65IYLWUW2S', '2022-02-09 14:11:26', 'Successful', 'Pending'),
+(420, 'Table 4', 678.00, 'EI-PAY-245XLV2144', '2022-02-09 16:41:41', 'Successful', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -493,33 +493,33 @@ CREATE TABLE `tbl_food` (
   `featured` varchar(10) NOT NULL,
   `active` varchar(10) NOT NULL,
   `stock` int(100) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_food`
 --
 
 INSERT INTO `tbl_food` (`id`, `title`, `description`, `price`, `image_name`, `category_id`, `featured`, `active`, `stock`) VALUES
-(34, 'Chicken Burger', 'Chicken Burger', '120.00', 'Food-Name-7394.jpg', 41, 'No', 'Yes', 56),
-(35, 'Beef Burger', 'Beef Burger', '150.00', 'Food-Name-251.jpg', 41, 'No', 'Yes', 60),
-(36, 'Cheese Burger', 'Cheese Burger', '100.00', 'Food-Name-1511.jpg', 41, 'No', 'Yes', 84),
-(37, 'Hamburger', 'Hamburger', '160.00', 'Food-Name-8238.jpg', 41, 'Yes', 'Yes', 90),
-(38, 'Supreme Pizza', 'Supreme Pizza', '450.00', 'Food-Name-3657.jpg', 42, 'Yes', 'Yes', 69),
-(39, 'Deluxe Pizza ', 'Deluxe Pizza ', '490.00', 'Food-Name-4854.jpg', 42, 'No', 'Yes', 49),
-(40, 'Cheese Pizza', 'Cheese Pizza', '350.00', 'Food-Name-926.jpg', 42, 'No', 'Yes', 80),
-(41, 'Vegetarian Pizza', 'Vegetarian Pizza', '300.00', 'Food-Name-6428.jpg', 42, 'No', 'Yes', 86),
-(42, 'Chili Hot Dog', 'Chili Hot Dog', '80.00', 'Food-Name-1499.jpg', 43, 'No', 'Yes', 145),
-(43, 'Hot Onion Dog', 'Hot Onion Dog', '100.00', 'Food-Name-5049.jpg', 43, 'No', 'Yes', 159),
-(44, 'Cheese Dog', 'Cheese Dog', '110.00', 'Food-Name-3512.jpg', 43, 'Yes', 'Yes', 60),
-(45, 'Red Hot', 'Red Hot\r\n', '120.00', 'Food-Name-5500.jpg', 43, 'No', 'Yes', 139),
-(46, 'Popcorn Chicken', 'Popcorn Chicken', '250.00', 'Food-Name-9143.jpg', 44, 'No', 'Yes', 500),
-(47, 'Samoosa', 'Samoosa', '100.00', 'Food-Name-1669.jpg', 44, 'No', 'Yes', 300),
-(48, 'Shingara', 'Shingara', '100.00', 'Food-Name-937.jpg', 44, 'Yes', 'Yes', 596),
-(49, 'Spring Roll', 'Spring Roll', '130.00', 'Food-Name-5356.jpg', 44, 'Yes', 'Yes', 78),
-(50, 'Chicken Nuggets', 'Chicken Nuggets', '150.00', 'Food-Name-5725.jpg', 44, 'No', 'Yes', 595),
-(51, 'Chicken Kiev Balls', 'Chicken Kiev Balls', '200.00', 'Food-Name-5497.jpg', 44, 'Yes', 'Yes', 39),
-(52, 'French Fries', 'French Fries', '120.00', 'Food-Name-2893.jpg', 44, 'Yes', 'Yes', 594),
-(53, 'Onion Rings', 'Onion Rings', '100.00', 'Food-Name-8745.jpg', 44, 'Yes', 'Yes', 597);
+(34, 'Chicken Burger', 'Chicken Burger', 120.00, 'Food-Name-7394.jpg', 41, 'No', 'Yes', 70),
+(35, 'Beef Burger', 'Beef Burger', 150.00, 'Food-Name-251.jpg', 41, 'No', 'Yes', 59),
+(36, 'Cheese Burger', 'Cheese Burger', 100.00, 'Food-Name-1511.jpg', 41, 'No', 'Yes', 83),
+(37, 'Hamburger', 'Hamburger', 160.00, 'Food-Name-8238.jpg', 41, 'Yes', 'Yes', 90),
+(38, 'Supreme Pizza', 'Supreme Pizza', 450.00, 'Food-Name-3657.jpg', 42, 'Yes', 'Yes', 69),
+(39, 'Deluxe Pizza ', 'Deluxe Pizza ', 490.00, 'Food-Name-4854.jpg', 42, 'No', 'Yes', 49),
+(40, 'Cheese Pizza', 'Cheese Pizza', 350.00, 'Food-Name-926.jpg', 42, 'No', 'Yes', 80),
+(41, 'Vegetarian Pizza', 'Vegetarian Pizza', 300.00, 'Food-Name-6428.jpg', 42, 'No', 'Yes', 86),
+(42, 'Chili Hot Dog', 'Chili Hot Dog', 80.00, 'Food-Name-1499.jpg', 43, 'No', 'Yes', 145),
+(43, 'Hot Onion Dog', 'Hot Onion Dog', 100.00, 'Food-Name-5049.jpg', 43, 'No', 'Yes', 159),
+(44, 'Cheese Dog', 'Cheese Dog', 110.00, 'Food-Name-3512.jpg', 43, 'Yes', 'Yes', 60),
+(45, 'Red Hot', 'Red Hot\r\n', 120.00, 'Food-Name-5500.jpg', 43, 'No', 'Yes', 139),
+(46, 'Popcorn Chicken', 'Popcorn Chicken', 250.00, 'Food-Name-9143.jpg', 44, 'No', 'Yes', 500),
+(47, 'Samoosa', 'Samoosa', 100.00, 'Food-Name-1669.jpg', 44, 'No', 'Yes', 300),
+(48, 'Shingara', 'Shingara', 100.00, 'Food-Name-937.jpg', 44, 'Yes', 'Yes', 596),
+(49, 'Spring Roll', 'Spring Roll', 130.00, 'Food-Name-5356.jpg', 44, 'Yes', 'Yes', 78),
+(50, 'Chicken Nuggets', 'Chicken Nuggets', 150.00, 'Food-Name-5725.jpg', 44, 'No', 'Yes', 595),
+(51, 'Chicken Kiev Balls', 'Chicken Kiev Balls', 200.00, 'Food-Name-5497.jpg', 44, 'Yes', 'Yes', 39),
+(52, 'French Fries', 'French Fries', 120.00, 'Food-Name-2893.jpg', 44, 'Yes', 'Yes', 594),
+(53, 'Onion Rings', 'Onion Rings', 100.00, 'Food-Name-8745.jpg', 44, 'Yes', 'Yes', 597);
 
 -- --------------------------------------------------------
 
@@ -537,51 +537,51 @@ CREATE TABLE `tbl_order` (
   `customer_contact` varchar(20) NOT NULL,
   `customer_email` varchar(150) NOT NULL,
   `customer_address` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_order`
 --
 
 INSERT INTO `tbl_order` (`id`, `transaction_id`, `total`, `order_date`, `status`, `customer_name`, `customer_contact`, `customer_email`, `customer_address`) VALUES
-(1, 'Pepperoni Pizza', '220.00', '2022-01-16 06:47:44', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(2, 'Pepperoni Pizza', '220.00', '2022-01-16 06:50:46', 'Delivered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(3, 'Beef Burger', '150.00', '2022-01-16 08:09:49', 'Cancelled', 'my full name', 'country name', 'me@mydomain.com', ''),
-(4, 'Mexican Pizza', '750.00', '2022-01-16 08:10:16', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(5, 'Buffalo Wings', '250.00', '2022-01-16 08:35:55', 'On Delivery', 'Maheosy Haque', '01717731002', 'me@mydomain.com', ''),
-(6, 'Pepperoni Pizza', '220.00', '2022-01-17 07:10:28', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(7, 'Buffalo Wings', '250.00', '2022-01-17 07:11:00', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(8, 'Mexican Pizza', '250.00', '2022-01-17 07:11:56', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
-(9, '', '200.00', '2022-01-21 21:29:42', 'Successful', 'Maheosy Haque', '01717731002', 'maheosy.sristy@gmail.com', ''),
-(10, '', '220.00', '2022-01-21 21:31:46', 'Successful', 'Maheosy Haque', '01717731002', 'me@mydomain.com', ''),
-(11, '', '250.00', '2022-01-21 21:32:43', 'Successful', 'Maheosy Haque', '01717731002', 'maheosy.sristy@gmail.com', ''),
-(12, 'HF141T', '220.00', '2022-01-21 21:38:46', 'Successful', 'Forest Gump', '01717731002', 'forest@gmail.com', ''),
-(13, 'IVVOP1', '250.00', '2022-01-21 21:40:30', 'Successful', 'Maheosy Haque', '9', 'me@mydomain.com', ''),
-(14, 'ROBO-CAFEMP5J31', '250.00', '2022-01-21 21:42:27', 'Successful', 'Maheosy Haque', '23', 'maheosy.sristy@gmail.com', ''),
-(15, 'ROBO-CAFE-K0WPJ8', '150.00', '2022-01-21 21:49:59', 'Successful', 'Maheosy Haque', '2', 'maheosy.sristy@gmail.com', ''),
-(16, 'ROBO-CAFE-7XS507', '680.00', '2022-01-21 23:18:36', 'Successful', 'Maheosy Haque', '01717732432', 'maheosy.sristy@gmail.com', ''),
-(17, 'ROBO-CAFE-0GI4JT', '180.00', '2022-01-21 23:21:39', 'Successful', 'Maheosy Haque', '45345345', 'maheosy.sristy@gmail.com', ''),
-(18, '', '0.00', '2022-01-22 02:05:57', '', '', '', '', ''),
-(19, '', '0.00', '2022-01-22 02:14:44', '', '', '', '', ''),
-(20, '', '0.00', '2022-01-22 02:15:44', '', '', '', '', ''),
-(21, '', '0.00', '2022-01-22 02:17:10', '', '', '', '', 'Array'),
-(22, 'Array', '0.00', '2022-01-22 02:18:24', '', '', '', '', 'cus_add1'),
-(23, 'Array', '0.00', '2022-01-22 02:22:21', '', '', '', '', ''),
-(24, 'Array', '0.00', '2022-01-22 02:23:30', '', '', '', '', ''),
-(25, 'ROBO-CAFE-MML336', '250.00', '2022-01-22 02:27:11', '', 'my full name', '34534', 'me@mydomain.com', '01'),
-(26, 'ROBO-CAFE-MML336', '250.00', '2022-01-22 02:28:40', '', 'my full name', '34534', 'me@mydomain.com', '01'),
-(27, 'ROBO-CAFE-A1DFRQ', '250.00', '2022-01-22 02:29:22', '', 'my full name', '45', 'me@mydomain.com', '01'),
-(28, 'ROBO-CAFE-S4B37V', '250.00', '2022-01-22 02:30:25', '', 'my full name', '45', 'me@mydomain.com', '01'),
-(29, 'ROBO-CAFE-F7Y4XU', '250.00', '2022-01-22 02:31:15', '', 'my full name', '56', 'me@mydomain.com', '01'),
-(30, 'ROBO-CAFE-F7Y4XU', '250.00', '2022-01-22 02:32:19', '', 'my full name', '56', 'me@mydomain.com', '01'),
-(31, 'ROBO-CAFE-PQZ46L', '250.00', '2022-01-22 02:32:26', '', 'my full name', '4', 'me@mydomain.com', '01'),
-(32, 'ROBO-CAFE-9F5EG7', '250.00', '2022-01-22 02:57:56', '', 'my full name', '345', 'me@mydomain.com', '01'),
-(33, 'ROBO-CAFE-9F5EG7', '250.00', '2022-01-22 02:57:59', '', 'my full name', '345', 'me@mydomain.com', '01'),
-(34, 'ROBO-CAFE-3N4U4N', '250.00', '2022-01-22 02:58:04', '', 'my full name', '234', 'me@mydomain.com', '01'),
-(35, 'ROBO-CAFE-3N4U4N', '250.00', '2022-01-22 02:58:52', '', 'my full name', '234', 'me@mydomain.com', '01'),
-(36, 'ROBO-CAFE-51G6DI', '100.00', '2022-01-22 05:52:14', '', 'Mohammad Wasikuzzaman', '01717731002', 'wasik@gmail.com', 'Banani, Dhaka'),
-(37, 'ROBO-CAFE-CJAJIH', '250.00', '2022-01-22 05:54:56', '', 'my full name', '4', 'me@mydomain.com', '01'),
-(38, 'ROBO-CAFE-MH9P87', '150.00', '2022-01-22 17:56:12', 'Successful', 'my full name', '8', 'me@mydomain.com', '');
+(1, 'Pepperoni Pizza', 220.00, '2022-01-16 06:47:44', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(2, 'Pepperoni Pizza', 220.00, '2022-01-16 06:50:46', 'Delivered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(3, 'Beef Burger', 150.00, '2022-01-16 08:09:49', 'Cancelled', 'my full name', 'country name', 'me@mydomain.com', ''),
+(4, 'Mexican Pizza', 750.00, '2022-01-16 08:10:16', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(5, 'Buffalo Wings', 250.00, '2022-01-16 08:35:55', 'On Delivery', 'Maheosy Haque', '01717731002', 'me@mydomain.com', ''),
+(6, 'Pepperoni Pizza', 220.00, '2022-01-17 07:10:28', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(7, 'Buffalo Wings', 250.00, '2022-01-17 07:11:00', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(8, 'Mexican Pizza', 250.00, '2022-01-17 07:11:56', 'Ordered', 'my full name', 'country name', 'me@mydomain.com', ''),
+(9, '', 200.00, '2022-01-21 21:29:42', 'Successful', 'Maheosy Haque', '01717731002', 'maheosy.sristy@gmail.com', ''),
+(10, '', 220.00, '2022-01-21 21:31:46', 'Successful', 'Maheosy Haque', '01717731002', 'me@mydomain.com', ''),
+(11, '', 250.00, '2022-01-21 21:32:43', 'Successful', 'Maheosy Haque', '01717731002', 'maheosy.sristy@gmail.com', ''),
+(12, 'HF141T', 220.00, '2022-01-21 21:38:46', 'Successful', 'Forest Gump', '01717731002', 'forest@gmail.com', ''),
+(13, 'IVVOP1', 250.00, '2022-01-21 21:40:30', 'Successful', 'Maheosy Haque', '9', 'me@mydomain.com', ''),
+(14, 'ROBO-CAFEMP5J31', 250.00, '2022-01-21 21:42:27', 'Successful', 'Maheosy Haque', '23', 'maheosy.sristy@gmail.com', ''),
+(15, 'ROBO-CAFE-K0WPJ8', 150.00, '2022-01-21 21:49:59', 'Successful', 'Maheosy Haque', '2', 'maheosy.sristy@gmail.com', ''),
+(16, 'ROBO-CAFE-7XS507', 680.00, '2022-01-21 23:18:36', 'Successful', 'Maheosy Haque', '01717732432', 'maheosy.sristy@gmail.com', ''),
+(17, 'ROBO-CAFE-0GI4JT', 180.00, '2022-01-21 23:21:39', 'Successful', 'Maheosy Haque', '45345345', 'maheosy.sristy@gmail.com', ''),
+(18, '', 0.00, '2022-01-22 02:05:57', '', '', '', '', ''),
+(19, '', 0.00, '2022-01-22 02:14:44', '', '', '', '', ''),
+(20, '', 0.00, '2022-01-22 02:15:44', '', '', '', '', ''),
+(21, '', 0.00, '2022-01-22 02:17:10', '', '', '', '', 'Array'),
+(22, 'Array', 0.00, '2022-01-22 02:18:24', '', '', '', '', 'cus_add1'),
+(23, 'Array', 0.00, '2022-01-22 02:22:21', '', '', '', '', ''),
+(24, 'Array', 0.00, '2022-01-22 02:23:30', '', '', '', '', ''),
+(25, 'ROBO-CAFE-MML336', 250.00, '2022-01-22 02:27:11', '', 'my full name', '34534', 'me@mydomain.com', '01'),
+(26, 'ROBO-CAFE-MML336', 250.00, '2022-01-22 02:28:40', '', 'my full name', '34534', 'me@mydomain.com', '01'),
+(27, 'ROBO-CAFE-A1DFRQ', 250.00, '2022-01-22 02:29:22', '', 'my full name', '45', 'me@mydomain.com', '01'),
+(28, 'ROBO-CAFE-S4B37V', 250.00, '2022-01-22 02:30:25', '', 'my full name', '45', 'me@mydomain.com', '01'),
+(29, 'ROBO-CAFE-F7Y4XU', 250.00, '2022-01-22 02:31:15', '', 'my full name', '56', 'me@mydomain.com', '01'),
+(30, 'ROBO-CAFE-F7Y4XU', 250.00, '2022-01-22 02:32:19', '', 'my full name', '56', 'me@mydomain.com', '01'),
+(31, 'ROBO-CAFE-PQZ46L', 250.00, '2022-01-22 02:32:26', '', 'my full name', '4', 'me@mydomain.com', '01'),
+(32, 'ROBO-CAFE-9F5EG7', 250.00, '2022-01-22 02:57:56', '', 'my full name', '345', 'me@mydomain.com', '01'),
+(33, 'ROBO-CAFE-9F5EG7', 250.00, '2022-01-22 02:57:59', '', 'my full name', '345', 'me@mydomain.com', '01'),
+(34, 'ROBO-CAFE-3N4U4N', 250.00, '2022-01-22 02:58:04', '', 'my full name', '234', 'me@mydomain.com', '01'),
+(35, 'ROBO-CAFE-3N4U4N', 250.00, '2022-01-22 02:58:52', '', 'my full name', '234', 'me@mydomain.com', '01'),
+(36, 'ROBO-CAFE-51G6DI', 100.00, '2022-01-22 05:52:14', '', 'Mohammad Wasikuzzaman', '01717731002', 'wasik@gmail.com', 'Banani, Dhaka'),
+(37, 'ROBO-CAFE-CJAJIH', 250.00, '2022-01-22 05:54:56', '', 'my full name', '4', 'me@mydomain.com', '01'),
+(38, 'ROBO-CAFE-MH9P87', 150.00, '2022-01-22 17:56:12', 'Successful', 'my full name', '8', 'me@mydomain.com', '');
 
 -- --------------------------------------------------------
 
@@ -598,14 +598,15 @@ CREATE TABLE `tbl_users` (
   `phone` bigint(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_users`
 --
 
 INSERT INTO `tbl_users` (`id`, `name`, `email`, `add1`, `city`, `phone`, `username`, `password`) VALUES
-(1, 'Wasikuzzaman', 'wasik0003@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'wasik0003', 'e0f7a4d0ef9b84b83b693bbf3feb8e6e');
+(1, 'Wasikuzzaman', 'wasik0003@gmail.com', 'Bhaluka Municipality, Bhaluka, Mymensingh.', 'Mymensingh', 1717731002, 'wasik0003', 'e0f7a4d0ef9b84b83b693bbf3feb8e6e'),
+(5, 'Mofiz Mia', 'mofiz@gmail.com', 'Dhaka', 'Dhaka', 1717122112, 'mofiz11', 'b59c67bf196a4758191e42f76670ceba');
 
 --
 -- Indexes for dumped tables
@@ -685,19 +686,19 @@ ALTER TABLE `message`
 -- AUTO_INCREMENT for table `order_manager`
 --
 ALTER TABLE `order_manager`
-  MODIFY `order_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `order_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `tbl_eipay`
@@ -709,7 +710,7 @@ ALTER TABLE `tbl_eipay`
 -- AUTO_INCREMENT for table `tbl_food`
 --
 ALTER TABLE `tbl_food`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`
@@ -721,7 +722,7 @@ ALTER TABLE `tbl_order`
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
