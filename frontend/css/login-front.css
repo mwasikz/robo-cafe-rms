@@ -28,7 +28,7 @@ body {
 .brand-logo {
   height: 100px;
   width: 100px;
-  background: url("../images/logo_ntx.png");
+  background: url("../../images/logo_ntx.png");
   background-size: 100px;
   margin: auto;
   border-radius: 10%;
